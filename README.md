@@ -8,11 +8,11 @@ Though each engineer does specialize in either front-end or back-end, we still s
 
 Since this is a backend-focused challenge, we are not looking for styling or CSS, but will notice if any improvements are made. For this backend challenge, the default configurations should work as-is. Feel free to update the configurations for your implementation of the challenge, if needed.
 
-Please create a Rails API endpoint to provide service provider rates to the frontend Vue app.
+Please create a Rails API endpoint to provide service rates to the frontend Vue app.
 
-#### Provider model
-Shipping service provider with the attributes:
-  * Name of company
+#### Rate model
+Shipping service rate with the attributes:
+  * Name of company providing service, like a trucking carrier
   * A flat shipping rate
 
 #### Requirements
@@ -25,7 +25,7 @@ The repo has Vue already installed with Webpacker.
 
 #### Requirements
 * Fetch the data from the Rails app on page load.
-* Update the simple index view with a list of each provider's name and flat rate.
+* Update the simple index view with a list of each company's name and it's flat shipping rate.
 
 To run the app:
 ```

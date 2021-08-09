@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h1>Providers List</h1>
+    <h1>Rates List</h1>
     <ul>
       <li class="title">
         <div>Company Name</div>
         <div>Total ($)</div>
       </li>
-      <li v-for="p in providers" :key="p.name">
-        <div>{{ p.name }}</div>
-        <div>{{ p.flat_rate }}</div>
+      <li v-for="r in rate" :key="r.company_name">
+        <div>{{ r.company_name }}</div>
+        <div>{{ r.flat_rate }}</div>
       </li>
     </ul>
   </div>
@@ -18,12 +18,12 @@
 import axios from 'axios'
 
 export default {
-  name: 'Providers',
+  name: 'Rates',
   data () {
     return {
-      providers: [
+      rates: [
         {
-          name: 'company name',
+          company_name: 'company name',
           rate: {
             total: 100
           }
@@ -33,8 +33,8 @@ export default {
   },
   mounted () {
     axios
-      .get('/providers.json')
-      .then(response => (this.providers = response.data))
+      .get('/rates.json')
+      .then(response => (this.rates = response.data))
   },
   methods: {}
 }

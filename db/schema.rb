@@ -12,8 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2021_08_06_220633) do
 
-  create_table "providers", force: :cascade do |t|
-    t.string "name", null: false
+  create_table "rates", force: :cascade do |t|
+    t.string "company_name", null: false
     t.decimal "flat_rate", precision: 5, scale: 2
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
