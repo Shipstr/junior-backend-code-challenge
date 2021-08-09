@@ -10,24 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_06_221000) do
+ActiveRecord::Schema.define(version: 2021_08_06_220633) do
 
   create_table "providers", force: :cascade do |t|
     t.string "name", null: false
     t.decimal "flat_rate", precision: 5, scale: 2
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "rates", force: :cascade do |t|
-    t.integer "provider_id"
-    t.decimal "rate", precision: 5, scale: 2
-    t.string "origin", null: false
-    t.string "destination", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["origin", "destination", "provider_id"], name: "index_rates_on_origin_and_destination_and_provider_id", unique: true
-    t.index ["provider_id"], name: "index_rates_on_provider_id"
   end
 
 end

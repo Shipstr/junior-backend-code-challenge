@@ -17,13 +17,6 @@ Shipping service provider with the attributes:
   * Name of company
   * A flat shipping rate
 
-#### Rates
-A model to represent shipping rates that each provider has (different from the provider's flat rate).
-  * Rate (per kilo)
-  * Origin, as two-letter country code
-  * Destination, as two-letter country code
-  * Relationship to the shipping provider
-
 #### Requirements
 * Create a way to load the attached data into the data store. Via console is fine.
 * Make sure all the rates are stored.
