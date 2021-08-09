@@ -4,17 +4,19 @@
     <ul>
       <li class="title">
         <div>Company Name</div>
-        <div>Total</div>
+        <div>Total ($)</div>
       </li>
       <li v-for="p in providers" :key="p.name">
         <div>{{ p.name }}</div>
-        <div>{{ p.rate.total }} {{ p.rate.currency }}</div>
+        <div>{{ p.flat_rate }}</div>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'Providers',
   data () {
@@ -23,12 +25,16 @@ export default {
         {
           name: 'company name',
           rate: {
-            total: 100,
-            currency: 'USD'
+            total: 100
           }
         }
       ]
     }
+  },
+  mounted () {
+    axios
+      .get('/providers.json')
+      .then(response => (this.providers = response.data))
   },
   methods: {}
 }

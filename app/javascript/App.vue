@@ -13,6 +13,7 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 #app {
   font-family: 'Helvetica Neue', Arial, sans-serif;
