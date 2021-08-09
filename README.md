@@ -6,7 +6,7 @@ Though each engineer does specialize in either front-end or back-end, we still s
 
 *We expect this exercise to take 2-4 hours at the most.* If you ran out of time, please comment on what remains to be done in the README.
 
-Since this is a backend-focused challenge, we are not looking for styling or CSS, but will notice if any improvements are made. Also, don't concern yourself with configuring everything perfectly. This is just an exercise, so if you don't need to tweak something in order to meet the criteria below, leave it at the defaults.
+Since this is a backend-focused challenge, we are not looking for styling or CSS, but will notice if any improvements are made. For this backend challenge, the default configurations should work as-is. Feel free to update the configurations for your implementation of the challenge, if needed.
 
 # Back-end
 
