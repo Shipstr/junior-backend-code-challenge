@@ -19,14 +19,14 @@ Shipping service provider with the attributes:
 
 #### Rates
 A model to represent shipping rates that each provider has (different from the provider's flat rate).
-  * Rate as monetary value (per kilo)
+  * Rate (per kilo)
   * Origin, as two-letter country code
   * Destination, as two-letter country code
   * Relationship to the shipping provider
 
 #### Requirements
 * Create a way to load the attached data into the data store. Via console is fine.
-* Make sure all the converted monetary USD amounts are stored.
+* Make sure all the rates are stored.
 * Write any specs you deem necessary.
 
 # Front-end/UI
@@ -35,14 +35,14 @@ The repo has Vue already installed with Webpacker.
 
 #### Requirements
 * Fetch the data from the Rails app on page load.
-* Update the simple index view with a list of: provider's name, origin, destination, formatted rate as a monetary value, formatted common rate in USD.
-* Create a simple bare-bones form that allows editing and updating a rate. Allow changing all attributes except the common USD rate.
+* Update the simple index view with a list of each provider's name and flat rate.
 
 To run the app:
 ```
 yarn
 bundle
 rails db:create
+rails db:migrate
 rails s
 ```
 
