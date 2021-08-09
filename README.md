@@ -8,18 +8,15 @@ Though each engineer does specialize in either front-end or back-end, we still s
 
 Since this is a backend-focused challenge, we are not looking for styling or CSS, but will notice if any improvements are made. For this backend challenge, the default configurations should work as-is. Feel free to update the configurations for your implementation of the challenge, if needed.
 
-# Back-end
+Please create a Rails API endpoint to provide service provider rates to the frontend Vue app.
 
-Please utilize the Rails app which stores and looks up rates from shipping service providers. The app's data model:
-
-#### Provider
+#### Provider model
 Shipping service provider with the attributes:
   * Name of company
   * A flat shipping rate
 
 #### Requirements
 * Create a way to load the attached data into the data store. Via console is fine.
-* Make sure all the rates are stored.
 * Write any specs you deem necessary.
 
 # Front-end/UI
