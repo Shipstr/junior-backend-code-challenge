@@ -33,7 +33,7 @@ export default {
   },
   mounted () {
     axios
-      .get('/rates.json')
+      .get('/rate')
       .then(response => {
         console.log(response)
         this.rates = response.data
