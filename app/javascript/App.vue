@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <providers />
+    <rates />
   </div>
 </template>
 
 <script>
-import providers from './packs/Providers'
+import rates from './packs/Rates'
 
 export default {
   components: {
-    providers: providers
+    rates: rates
   }
 }
 </script>
+
 <style scoped>
 #app {
   font-family: 'Helvetica Neue', Arial, sans-serif;
