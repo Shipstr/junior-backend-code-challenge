@@ -6,7 +6,7 @@
         <div>Company Name</div>
         <div>Total ($)</div>
       </li>
-      <li v-for="r in rate" :key="r.company_name">
+      <li v-for="r in rates" :key="r.company_name">
         <div>{{ r.company_name }}</div>
         <div>{{ r.flat_rate }}</div>
       </li>
@@ -34,7 +34,10 @@ export default {
   mounted () {
     axios
       .get('/rates.json')
-      .then(response => (this.rates = response.data))
+      .then(response => {
+        console.log(response)
+        this.rates = response.data
+      })
   },
   methods: {}
 }

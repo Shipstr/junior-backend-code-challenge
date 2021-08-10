@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import rates from './packs/Rates'
+import rates from './Rates'
 
 export default {
   components: {
@@ -21,6 +21,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px auto 0;
+  max-width: 800px;
 }
 </style>
