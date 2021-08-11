@@ -16,7 +16,7 @@ Shipping service rate with the attributes:
   * A flat shipping rate
 
 #### Requirements
-* Create a way to load the attached data into the data store. Via console is fine.
+* Create a way to load the `rate_data.csv` into the database using the rate model.
 * Write any specs you deem necessary.
 
 # Front-end/UI
@@ -25,7 +25,7 @@ The repo has Vue already installed with Webpacker.
 
 #### Requirements
 * Fetch the data from the Rails app on page load.
-* Update the simple index view with a list of each company's name and it's flat shipping rate.
+* Update the simple index view with a list of each carrier's name and its flat shipping rate.
 
 To run the app:
 ```
