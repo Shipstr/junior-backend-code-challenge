@@ -5,9 +5,9 @@
         <div>Carrier</div>
         <div>Rate</div>
       </li>
-      <li v-for="rate in rate" :key="rate.id">
+      <li v-for="rate in rates" :key="rate.id">
         <div>{{ rate.name }}</div>
-        <div>{{ rate.rate }}</div>
+        <div>{{ rate.flat_rate }}</div>
       </li>
     </ul>
   </div>
@@ -24,7 +24,7 @@ export default {
         {
           id: 1,
           name: 'carrier name',
-          rate: 1200.00
+          flat_rate: 1200.00
         }
       ]
     }

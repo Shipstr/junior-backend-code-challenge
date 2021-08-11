@@ -13,7 +13,7 @@ Please create a Rails API endpoint to provide service rates to the frontend Vue 
 #### Rate model
 Shipping service rate with the attributes:
   * Name of company providing service, like a trucking carrier
-  * A flat shipping rate
+  * A flat rate
 
 #### Requirements
 * Create a way to load the `rate_data.csv` into the database using the rate model.
@@ -25,7 +25,7 @@ The repo has Vue already installed with Webpacker.
 
 #### Requirements
 * Fetch the data from the Rails app on page load.
-* Update the simple index view with a list of each carrier's name and its flat shipping rate.
+* Update the simple index view with a list of each carrier's name and its flat rate.
 
 To run the app:
 ```
