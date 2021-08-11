@@ -21,25 +21,14 @@ export default {
   name: 'Rates',
   data () {
     return {
-      rates: [
-        {
-          company_name: 'company name',
-          rate: {
-            total: 100
-          }
-        }
-      ]
+      rates: []
     }
   },
   mounted () {
     axios
       .get('/rate')
-      .then(response => {
-        console.log(response)
-        this.rates = response.data
-      })
-  },
-  methods: {}
+      .then(response => (this.rates = response.data))
+  }
 }
 </script>
 
@@ -53,7 +42,8 @@ ul {
 li {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
+  margin: 0;
+	padding: 5px 10px;
 }
 
 .title {
