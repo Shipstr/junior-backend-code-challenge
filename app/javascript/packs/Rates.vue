@@ -3,14 +3,10 @@
     <ul>
       <li class="title">
         <div>Carrier</div>
-        <div>Origin</div>
-        <div>Destination</div>
         <div>Rate</div>
       </li>
       <li v-for="rate in rate" :key="rate.id">
         <div>{{ rate.name }}</div>
-        <div>{{ rate.origin }}</div>
-        <div>{{ rate.destination }}</div>
         <div>{{ rate.rate }}</div>
       </li>
     </ul>
@@ -28,8 +24,6 @@ export default {
         {
           id: 1,
           name: 'carrier name',
-          origin: 'US',
-          destination: 'ZA',
           rate: 1200.00
         }
       ]
